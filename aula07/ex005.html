@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var numero1InString = prompt("Digite o primeiro numero: ")
+        var numero2InString = prompt("Digite o segundo numero: ")
+
+        var numero1 = Number(numero1InString)
+        var numero2 = Number(numero2InString)
+
+        var soma = numero1 + numero2
+        var subtracao = numero1 - numero2
+        var multiplicacao = numero1 * numero2
+        var divisao = numero1 / numero2
+        var potenciacao = numero1 ** numero2
+        var restoDivisao = numero1 % numero2
+
+        document.writeln(`<br>${numero1} + ${numero2} = ${soma}</br>`)
+        document.writeln(`<br>${numero1} - ${numero2} = ${subtracao}</br>`)
+        document.writeln(`<br>${numero1} * ${numero2} = ${multiplicacao}</br>`)
+        document.writeln(`<br>${numero1} / ${numero2} = ${divisao}</br>`)
+        document.writeln(`<br>${numero1} ** ${numero2} = ${potenciacao}</br>`)
+        document.writeln(`<br>${numero1} % ${numero2} = ${restoDivisao}</br>`)
+
+    </script>
+</body>
+</html>
