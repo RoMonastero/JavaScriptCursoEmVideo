@@ -177,3 +177,91 @@ E criando um botao para o input:
 Agora para pegar o valor desses elementos e tranforma-los em numero (isso ja foi mostrado anteriormente, mas o exemplo é apenas para deixar mais claro)
 var tn1 = document.getElementById("txtn1")
 var n1 = Number(tn1.value)
+
+-------------------------------------------------------------------------------------------------------------------------
+
+Modulo D:
+Aula 11:
+
+Condições (Parte 1)
+
+Normalmente os códigos seguem uma sequencia, de cima para baixo. Essa sequencia só é quebrada com um condicional, dependendo de algo uma parte do codigo é executado ou não (na verdade o codigo segue sendo lido de cima para baixo, mas com as condições certas partes podem ser ignoradas, dependendo da condição)
+
+Existem alguns tipos de condição
+
+Condição simples -> onde so se tem o if
+
+Condição composta -> onde se usa if e else
+
+print no node.js -> console.log()
+
+
+Aula 12:
+
+Condições (Parte 2)
+
+Condição aninhada -> if dentro de if ou if dentro de else (ou o famoso else if)
+
+pegando hora atual com node.js:
+var agora = new Date()
+var hora = agora.getHours()
+
+Condição multipla -> switch case
+switch(expressao){
+    case caso1:
+        break
+
+    case caso2:
+        break
+
+    default: (seria tipo o else)
+    break
+}
+No switch case sempre é preciso usar o break no fim dae cada caso
+
+
+Exercicios 01:
+
+É muito importante planejar a estrutura de um site antes de faze-lo.
+
+Comecamos fazendo um arquivo diferente para o estilo e, para importalo, <link rel="stylesheet" href="estilo.css">. E para importar um arquivo de JavaScript <script src="script.js"></script>
+
+
+Exercicios 02:
+
+Para pegar fotos é so entrar no site "https://www.pexels.com/pt-br/procurar/portugu%C3%AAs/"
+
+Para usar uma foto no HTML <img src="fotos/manha.jpg" alt="Foto do Dia" id="imagem">
+
+Para chamar uma funcao quando a tela carregar é so chamar o 'onload=""' em alguma tag do HTML
+
+Para mudar o arquivo de foto com o DOM:
+var img = document.getElementById('imagem')
+img.src = "fotos/tarde.jpg"
+
+Exercicios 03:
+
+Para definir um valor minimo ou maximo no input em HTML:
+<input type="number" name="txtano" id="txtano" min="0">
+
+Para fazer aquele input com o botao arredondado:
+<input type="radio" name="radsex" id="masc" checked>
+ <label for="masc">Masculino</label>
+<input type="radio" name="radsex" id="fem" >
+ <label for="fem">Feminino</label>
+Onde o name deve ser o mesmo para representar que faz parte do mesmo input
+
+Checando no JavaScript se o botao de input arredondado esta maracado:
+var sex = document.getElementsByName('radsex')
+if(sex[0].checked){
+    genero = 'Masculino'
+} else if(sex[1].checked){
+    genero = 'Feminino'
+}
+
+Criando um elemento e passando um id para ele em JavaScript:
+var img = document.createElement('img')
+img.setAttribute('id', 'foto')
+
+Adicionando uma tag em alguma outra tag pelo JavaScript:
+res.appendChild(img) (o img é o mesmo criado acima com o JavaScript)
