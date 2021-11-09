@@ -265,3 +265,67 @@ img.setAttribute('id', 'foto')
 
 Adicionando uma tag em alguma outra tag pelo JavaScript:
 res.appendChild(img) (o img é o mesmo criado acima com o JavaScript)
+
+-------------------------------------------------------------------------------------------------------------------------
+
+Modulo E:
+Aula 13:
+
+Repetições (Parte 1)
+
+Primeira estrutura
+
+while(condicao){
+    esse bloco sera executado enquanto a condicao for verdadeira
+}
+
+Segunda estrutura
+
+do{
+    primeiro executa o bloco e depois testa a condicao
+}while(condicao)
+
+
+Aula 14:
+
+Repetições (Parte 2)
+
+for(var i = 1; condicao; i++){
+
+}
+
+
+Exercicios 04:
+
+Aula de demonstração de como serão os exercicios.
+
+
+Exercicios 05:
+
+Para utilizar emojis
+entrar no site -> https://unicode.org/emoji/charts/full-emoji-list.html
+pegar o codigo do emoji desejado e retirar o U+ e colocar \u{restante do codigo do emoji}
+
+
+Exercicios 06:
+
+para criar um tab item
+<select name="tabuada" id="seltab" size="10">
+                <option>Digite um número acima</option>
+            </select>
+
+E para adicionar options no JavaScript
+    var num = document.getElementById('txtValue')
+    var tab = document.getElementById('seltab')
+    numero = Number(num.value)
+    tab.innerHTML = ''
+    for(var i = 0; i <= 10; i++){
+        var item = document.createElement(`option`)
+        tabuada = numero * i
+        item.text = `${numero} x ${i} = ${tabuada}`
+        item.value = `tab${i}`
+        tab.appendChild(item)  
+    }
+
+(Esse exemplo acima representa o que foi feito no ex021)
+    
