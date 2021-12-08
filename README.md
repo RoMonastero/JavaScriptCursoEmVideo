@@ -327,5 +327,81 @@ E para adicionar options no JavaScript
         tab.appendChild(item)  
     }
 
-(Esse exemplo acima representa o que foi feito no ex021)
+
+
+-------------------------------------------------------------------------------------------------------------------------
+
+Modulo F:
+Aula 15:    
+
+variaveis compostas conseguem armazenar varios valores de uma vez
+
+como em qualquer linguagem os indices começam com o 0 e para declarar uma lista é so usar: let num = [0,1,2]
+
+para adicionar um elemento na lista é so usar: num[3] = 6, assim o JavaScript adiciona um elemento nessa posicao
+
+num.push(valor), dessa forma sera adicionado um elemento no fim da lista
+
+num.length, retorna o tamanho da lista
+
+num.sort(), pega os elementos e coloca em ordem crescente
+
+para mostrar os elementos de dentro de um vetor é so usar ums estrutura de repetição para acessar os elementos
+
+existe um outro jeito de mostrar os elementos em uma lista em JavaScript, que é o for( let pos in num){ oq deve acontecer na repeticao}
+
+num.indexOf(7), vai pegar o index da onde tem o valor 7, caso nao tenha o valor ele retorna -1
+
+
+Aula 16:
+
+function soma(n1 = 0, n2 = 0) {
+    return n1 + n2
     
+}
+
+os iguais nos parametros represetam um valor padrao caso o usuario nao passe um dos valores, dessa forma evita erros
+
+Outra maneira de criar uma funcao:
+let v = function (x) {
+
+    return x*2
+    
+}
+
+console.log(v(2))
+
+
+Exercicios 07 e 08:
+
+variaveis escritas fora de funcoes sao consideras globais e podem ser acessadas por qualquer parte do codigo, é possivel ver isso no ex024
+
+let num = document.getElementById('txtValue')
+num.value = ''
+num.focus()
+
+dessa forma faz com que o valor desse num vire nada e o foco da pagina va para ele
+
+
+Aula 17:
+
+Estudar mais sobre funcoes, objetos, modularizacao, expressoes regulares, json, ajax, nodejs, bibliotecas e framework
+
+para criar um objeto é so utilizar:
+let amigo = {
+    nome: 'Jose',
+    sexo: 'M',
+    peso: 85.4,
+    engordar(p){}
+}
+
+os objetos podem guardar funcionalidades e metodos
+
+e para mostrar o nome é so utilizar o amigo.nome, o mesmo vale para os outros campos
+
+
+FIM
+
+-------------------------------------------------------------------------------------------------------------------------
+
+
